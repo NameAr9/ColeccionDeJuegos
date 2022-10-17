@@ -14,6 +14,7 @@
 		4B4327FF28FDE75E0035A79A /* ColecciondeJuegos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4B4327FD28FDE75E0035A79A /* ColecciondeJuegos.xcdatamodeld */; };
 		4B43280128FDE75F0035A79A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B43280028FDE75F0035A79A /* Assets.xcassets */; };
 		4B43280428FDE75F0035A79A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B43280228FDE75F0035A79A /* LaunchScreen.storyboard */; };
+		4B43280C28FDEEB60035A79A /* JuegosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B43280B28FDEEB60035A79A /* JuegosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		4B43280028FDE75F0035A79A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B43280328FDE75F0035A79A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B43280528FDE75F0035A79A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B43280B28FDEEB60035A79A /* JuegosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuegosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				4B4327F628FDE75E0035A79A /* SceneDelegate.swift */,
 				4B4327F828FDE75E0035A79A /* ViewController.swift */,
 				4B4327FA28FDE75E0035A79A /* Main.storyboard */,
+				4B43280B28FDEEB60035A79A /* JuegosViewController.swift */,
 				4B43280028FDE75F0035A79A /* Assets.xcassets */,
 				4B43280228FDE75F0035A79A /* LaunchScreen.storyboard */,
 				4B43280528FDE75F0035A79A /* Info.plist */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B43280C28FDEEB60035A79A /* JuegosViewController.swift in Sources */,
 				4B4327F928FDE75E0035A79A /* ViewController.swift in Sources */,
 				4B4327F528FDE75E0035A79A /* AppDelegate.swift in Sources */,
 				4B4327F728FDE75E0035A79A /* SceneDelegate.swift in Sources */,
