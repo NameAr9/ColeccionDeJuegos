@@ -34,7 +34,7 @@
                     <navigationItem key="navigationItem" id="VJk-rM-uNh">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="AR8-36-CK5">
                             <connections>
-                                <segue destination="deS-aj-ziO" kind="show" id="3xC-Ov-f96"/>
+                                <segue destination="deS-aj-ziO" kind="show" identifier="juegoSegue" id="3xC-Ov-f96"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -73,12 +73,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eN8-5u-aYm">
-                                <rect key="frame" x="169" y="348" width="76" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eN8-5u-aYm">
+                                <rect key="frame" x="160" y="348" width="94" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Agregar"/>
                                 <connections>
                                     <action selector="agregarTapped:" destination="deS-aj-ziO" eventType="touchUpInside" id="5EO-MJ-xX6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zg-Ke-XQG">
+                                <rect key="frame" x="160" y="400" width="94" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="NfH-BM-Arx"/>
+                                    <constraint firstAttribute="width" constant="76" id="Wp6-6H-3Nh"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Eliminar"/>
+                                <connections>
+                                    <action selector="eliminarTapped:" destination="deS-aj-ziO" eventType="touchUpInside" id="Nhk-LM-Yq8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -88,7 +100,10 @@
                             <constraint firstItem="eN8-5u-aYm" firstAttribute="centerX" secondItem="RuT-VD-nzi" secondAttribute="centerX" id="3KF-X5-8qn"/>
                             <constraint firstItem="ZXJ-UW-VBg" firstAttribute="top" secondItem="0Ud-Lz-Ai0" secondAttribute="top" constant="32" id="3Mr-cx-bO1"/>
                             <constraint firstItem="ZXJ-UW-VBg" firstAttribute="centerX" secondItem="pHq-CZ-eu9" secondAttribute="centerX" id="63x-E9-MqT"/>
+                            <constraint firstItem="6zg-Ke-XQG" firstAttribute="centerX" secondItem="eN8-5u-aYm" secondAttribute="centerX" id="Bu5-vV-GCE"/>
+                            <constraint firstItem="6zg-Ke-XQG" firstAttribute="top" secondItem="eN8-5u-aYm" secondAttribute="bottom" constant="20" id="F6U-Zv-pCk"/>
                             <constraint firstItem="eN8-5u-aYm" firstAttribute="top" secondItem="RuT-VD-nzi" secondAttribute="bottom" constant="24" id="Ng4-i0-VPo"/>
+                            <constraint firstItem="6zg-Ke-XQG" firstAttribute="width" secondItem="eN8-5u-aYm" secondAttribute="width" id="Xe3-bH-vb3"/>
                             <constraint firstItem="RuT-VD-nzi" firstAttribute="centerX" secondItem="ZXJ-UW-VBg" secondAttribute="centerX" id="kd5-Oz-Ir7"/>
                             <constraint firstItem="RuT-VD-nzi" firstAttribute="top" secondItem="ZXJ-UW-VBg" secondAttribute="bottom" constant="20" id="rIP-ua-xzy"/>
                             <constraint firstItem="RuT-VD-nzi" firstAttribute="width" secondItem="ZXJ-UW-VBg" secondAttribute="width" id="toT-Uo-TdO"/>
@@ -112,12 +127,14 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="JuegoImageView" destination="ZXJ-UW-VBg" id="W8g-AH-MI2"/>
+                        <outlet property="agregarActualizarBoton" destination="eN8-5u-aYm" id="mX6-gp-Q9G"/>
+                        <outlet property="eliminarBoton" destination="6zg-Ke-XQG" id="ctt-8w-OFe"/>
                         <outlet property="tituloTextField" destination="RuT-VD-nzi" id="mFm-OM-KrG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g96-IG-GFl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1576.8115942028987" y="83.705357142857139"/>
+            <point key="canvasLocation" x="1669.5652173913045" y="83.705357142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oDr-HK-Xb9">
@@ -135,7 +152,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V4P-Ai-vj2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-361" y="92"/>
+            <point key="canvasLocation" x="-87" y="84"/>
         </scene>
     </scenes>
     <resources>
